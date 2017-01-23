@@ -1,3 +1,11 @@
+'''
+这个爬虫主要知识点是对requests.session()的操作
+v2exsession=requests.Session()
+signin_data=v2exsession.get(url,headers=headers)
+通过简单两行实现了对cookie的处理
+p=v2exsession.post(url,data=postData,headers=headers)
+对post方法的使用
+'''
 import re
 import requests
 
