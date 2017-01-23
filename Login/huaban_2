@@ -4,13 +4,12 @@
 多线程
 from multiprocessing import Pool
 pool=Pool()
-pool.map(downloadimg,id_list)
-
+pool.map(downloadimg,id_list)#传入的是函数本身，不用downloadimg（）
 代理IP
 import random
 proxy_list = [
-            'http:',
-            'http:',
+            'http:110.110.110.110',
+            'http:110.110.110.110',
         ]
 proxy_ip = random.choice(proxy_list)
 proxies = {'http': proxy_ip}
