@@ -23,8 +23,8 @@ def getpoints():
         'Referer':'http://www.wolai66.com/sign_in'
     }
 
-    s1='VENMMDA5MDI4OTU='
-    s2='MjgwMzE2'
+    s1='username'
+    s2='pass'
     wolaisession=requests.session()
     webData=wolaisession.get(url)
     # <meta content="JSnpUN9vbvGmGDFxmLbDQim6PP51jcO+Nzlkel51kps=" name="csrf-token" /></head><body class="businesses_custom_common_blue" data-current_user="false" style="margin: 0px;">
@@ -102,13 +102,10 @@ def email(url):
         return formataddr((Header(name, 'utf-8').encode(), addr))
     msg = MIMEText(url, 'plain', 'utf-8')
     # 输入Email地址和口令:
-    from_addr = 'tcltestmao@163.com'
-    # from_addr = '1102836917@qq.com'
-    password = '1234qwer'
+    from_addr = 'test@163.com'
     # password = 'bdxztldobaorgfag'
     # 输入收件人地址:
-    # to_addr = '1102836917@kindle.cn'
-    to_addr = '1102836917@qq.com'
+    to_addr = ''
     # 输入SMTP服务器地址:
     smtp_server = 'smtp.qq.com'
     msg['From'] = _format_addr('京东监视程序 <%s>' % from_addr)
