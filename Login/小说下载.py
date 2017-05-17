@@ -129,10 +129,9 @@ def email(path,head):
     def _format_addr(s):
         name, addr = parseaddr(s)
         return formataddr((Header(name, 'utf-8').encode(), addr))
-    from_addr = '1102836917@qq.com'
+    from_addr = '@163.com'
     password = 'bdxztldobaorgfag'
-    to_addr = '1102836917@kindle.cn'
-    # to_addr = '1102836917@qq.com'
+    to_addr = ''
     smtp_server = 'smtp.qq.com'
     # msg = MIMEText('hello', 'plain', 'utf-8')
     msg=MIMEMultipart()
